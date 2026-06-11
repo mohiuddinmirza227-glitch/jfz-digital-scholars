@@ -4,8 +4,8 @@ import fs from "fs";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
-import { initializeApp } from "firebase/app";
-import { getFirestore, doc, getDoc, setDoc } from "firebase/firestore";
+import { initializeApp, getApp, getApps } from "firebase/app";
+import { getFirestore, initializeFirestore, doc, getDoc, setDoc } from "firebase/firestore";
 
 dotenv.config();
 
@@ -15,8 +15,32 @@ const PORT = 3000;
 app.use(express.json({ limit: "200mb" }));
 app.use(express.urlencoded({ limit: "200mb", extended: true }));
 
+// Helper to resolve writable database path in local and Serverless/Vercel setups
+function getDbPath(): string {
+  const isVercel = process.env.VERCEL === "1";
+  if (!isVercel) {
+    return path.join(process.cwd(), "db.json");
+  }
+  const tmpPath = "/tmp/db.json";
+  try {
+    if (!fs.existsSync(tmpPath)) {
+      const srcPath = path.join(process.cwd(), "db.json");
+      if (fs.existsSync(srcPath)) {
+        fs.copyFileSync(srcPath, tmpPath);
+        console.log("Successfully copied db.json to writable /tmp storage.");
+      } else {
+        // Fallback write
+        fs.writeFileSync(tmpPath, "{}", "utf-8");
+      }
+    }
+  } catch (err) {
+    console.warn("Could not copy db.json to /tmp fallback:", err);
+  }
+  return tmpPath;
+}
+
 // Resolve db.json path
-const DB_PATH = path.join(process.cwd(), "db.json");
+const DB_PATH = getDbPath();
 
 // Read and parse Firebase config safely
 let firestoreDb: any = null;
@@ -24,8 +48,16 @@ try {
   const firebaseConfigPath = path.join(process.cwd(), "firebase-applet-config.json");
   if (fs.existsSync(firebaseConfigPath)) {
     const firebaseConfig = JSON.parse(fs.readFileSync(firebaseConfigPath, "utf-8"));
-    const firebaseApp = initializeApp(firebaseConfig);
-    firestoreDb = getFirestore(firebaseApp, firebaseConfig.firestoreDatabaseId);
+    const firebaseApp = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
+    
+    const isVercel = process.env.VERCEL === "1";
+    if (isVercel) {
+      firestoreDb = initializeFirestore(firebaseApp, {
+        experimentalAutoDetectLongPolling: true
+      }, firebaseConfig.firestoreDatabaseId);
+    } else {
+      firestoreDb = getFirestore(firebaseApp, firebaseConfig.firestoreDatabaseId);
+    }
     console.log("Firebase initialized successfully on backend server with database ID:", firebaseConfig.firestoreDatabaseId);
   } else {
     console.warn("firebase-applet-config.json not found. Operating in local-fallback mode.");
