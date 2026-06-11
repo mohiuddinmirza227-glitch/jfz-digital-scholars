@@ -1,0 +1,6 @@
+{
+  "name": "JFZ Digital Scholars",
+  "description": "A modern Sunni Muslim digital companion to ask questions, learn Islam, find authentic guidance, and track your Deen.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

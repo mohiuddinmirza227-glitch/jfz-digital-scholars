@@ -1,0 +1,307 @@
+{
+  "appName": "JFZ Digital Scholars",
+  "logoText": "JFZ Scholars",
+  "headerBanner": "Welcome to JFZ Digital Scholars - Sunni Muslim Companion",
+  "primaryColor": "emerald",
+  "adminPassword": "pqcpql20r",
+  "videos": [
+    {
+      "id": "vid-1",
+      "title": "Beautiful Quran Recitation: Emotional Heart Soothing Verses",
+      "url": "https://www.youtube.com/watch?v=uC0_5R_6vA8",
+      "description": "Dilon ko sukoon dene wali Quran Sharif ki tilawat sunein aur sunnatein apnaein."
+    },
+    {
+      "id": "vid-2",
+      "title": "Daily Sunnah of Prophet (ﷺ): Prophetic Guidance",
+      "url": "https://www.youtube.com/watch?v=83I1s03C8sE",
+      "description": "Namaz me dhyan lagane aur daily masnoon duaein seekhne ke asaan tariqa."
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann-1",
+      "text": "🌙 Ramadan and Daily Fara'iz tracker is now live for all digital scholars! Track your progress instantly.",
+      "active": true
+    },
+    {
+      "id": "ann-2",
+      "text": "📚 Ask any Islamic question in Hinglish, English, or Hindi and get certified Sunni scholar hybrid references.",
+      "active": true
+    }
+  ],
+  "homeTab": {
+    "prayerSection": {
+      "visible": true,
+      "title": "Daily Prayer Timings (Sunni Hanafi)",
+      "timings": [
+        {
+          "name": "Fajr",
+          "time": "04:30 AM",
+          "active": true
+        },
+        {
+          "name": "Sunrise",
+          "time": "05:55 AM",
+          "active": true
+        },
+        {
+          "name": "Dhuhr",
+          "time": "12:20 PM",
+          "active": true
+        },
+        {
+          "name": "Asr",
+          "time": "04:45 PM",
+          "active": true
+        },
+        {
+          "name": "Maghrib",
+          "time": "07:05 PM",
+          "active": true
+        },
+        {
+          "name": "Isha",
+          "time": "08:35 PM",
+          "active": true
+        }
+      ]
+    },
+    "dailyAyah": {
+      "visible": true,
+      "title": "Daily Ayah",
+      "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "translation": "Yaqeenan, har mushkil ke saath aasaani hai. (Surely with hardship comes ease. - Surah Ash-Sharh 94:6)",
+      "verseId": "94:6"
+    },
+    "dailyHadith": {
+      "visible": true,
+      "title": "Daily Hadith",
+      "text": "Innamal a'maalu bin niyyaat. (Sabhi nek a'maal ka daromadaar niyat par hota hai.)",
+      "reference": "Sahih Al-Bukhari 1"
+    },
+    "dailyDua": {
+      "visible": true,
+      "title": "Daily Dua",
+      "arabic": "رَبِّ زِدْنِي عِلْمًا",
+      "translation": "Aye mere Rabb! Mere ilm me izafa farma. (O my Lord! Increase me in knowledge.)",
+      "reference": "Surah Taha 20:114"
+    },
+    "reminder": {
+      "visible": true,
+      "title": "Islamic Daily Reminder",
+      "text": "Humesha sachaai ka sath dein, taharat (wudu) ka dhyan rakhein, aur Farz Namazon ko behtreen tarike se waqt par ada karein."
+    },
+    "sectionsOrder": [
+      "prayer",
+      "ayah",
+      "hadith",
+      "dua",
+      "reminder"
+    ]
+  },
+  "askTab": {
+    "aiInstructions": "You are 'JFZ Digital Scholars AI Assistant', a compassionate, polite and deeply knowledgeable Sunni Muslim companion and high-capability general AI helper.\nYou can help the user with ANY general question (such as science, history, general knowledge, calculations, writing, coding) as well as authentic, scholarly Sunni Islamic / Deeni guidance.\nIf the question is non-religious, help them with state-of-the-art capabilities and polite manners, keeping your signature warm and polite Hinglish/English tone. If the question is deeni/Islamic, ensure strict Sunni Islamic alignment logic.\nYour primary language is custom friendly HINGLISH (Hindi/Urdu in Latin/English script) and simple English.\nAlways respond in simple, natural conversational Hinglish by default (e.g. \"Salam Alaikum! Aapka kya sawal hai? Main aapki madad karne ke liye tayyar hoon.\").\nStrict Sunni Islamic alignment logic:\n- Refer to authentic authentic Sunni knowledge, primarily from Quran Majeed, Sahih al-Bukhari, Sahih Muslim, and established Hanafi, Shafi'i, Maliki, and Hanbali scholars.\n- Keep answers simple enough for a school child to understand, yet structured enough with steps/bullets for adults.\n- Avoid political or highly sectarian polarizations; preach mercy, peace, and beautiful Muslim character.\n- If unsure about a highly complex Fiqh issue, guide the user to consult a physical local Sunni Mufti or scholar, but provide the basic general guidance with love.\n- Do NOT use robotic, dry text. Use comforting, warm words like 'Mere pyare bhai/behan', 'MashaAllah', 'Alhamdulillah', 'Jazakallah'.",
+    "suggestedQuestions": [
+      "Wudu tootne ki conditions kya hain?",
+      "Namaz (Salah) mein dhyan lagane ke tarike batayein?",
+      "Roza todne wale bare factors kya hain?",
+      "Bukhari shareef ki sikhai behtreen dua bataiye?",
+      "Tahajjud namaz ki fazilat kya hai?"
+    ],
+    "referenceSources": "Quran Al-Kareem, Sahih Al-Bukhari, Sahih Al-Muslim, Jamia Tirmidhi, Sunan Abu Dawud.",
+    "answerTemplates": [
+      {
+        "id": "temp-1",
+        "title": "General Fiqh Answer",
+        "format": "1. Basic rule in simple words\n2. Authentic reference\n3. Practical advice"
+      }
+    ],
+    "scholarVerification": {
+      "info": "JFZ Scholars Board verifies AI learning inputs. Answers are aligned with classical Sunni guidance."
+    }
+  },
+  "guidesTab": {
+    "guides": [
+      {
+        "id": "guide-1",
+        "title": "Wudu (Ablution) StepbyStep",
+        "category": "Taharat (Purity)",
+        "description": "Complete guide of performing clean Wudu for children and beginners.",
+        "steps": [
+          "Niyat karein aur 'Bismillah' bol kar shuru karein.",
+          "Dono haatho ko kalaiyo tak 3 baar achhe se dhoyein.",
+          "Kulli karein (rinsing mouth) 3 baar right hand ke paani se.",
+          "Naak me soft part tak paani dalein aur left hand se saaf karein 3 baar.",
+          "Chehra dhoyein (peshani ke baalon se lekar thhodi ke neeche tak) 3 baar.",
+          "Dono haatho ko kohniyo (elbows) samet 3 baar dhoyein (right first).",
+          "Sarr ka Masah karein (head scanning) ek baar wet haatho se.",
+          "Dono paon ko takhno (ankles) samet 3 baar achhe se dhoyein (right first)."
+        ],
+        "faqs": [
+          {
+            "q": "Kya behne wale khoon se wudu toot-ta hai?",
+            "a": "Haan, Hanafi school me agar jism se khoon nikal kar beh jaye to wudu toot jata hai."
+          },
+          {
+            "q": "Kya sone se wudu toot jata hai?",
+            "a": "Agar araam lagakar ya let kar so jayein jisse control na rahe to wudu toot jata hai."
+          }
+        ]
+      },
+      {
+        "id": "guide-2",
+        "title": "Daily 5 Salah Guide",
+        "category": "Ibadaat",
+        "description": "Learn the proper physical postures, niyyah, and recitation files for daily prayers.",
+        "steps": [
+          "Niyyah (dil me irada) karein aur dono haath kaano tak utha kar 'Allahu Akbar' kahein.",
+          "Haat bandh kar Qiyam me khade ho kar Thanaa aur Surah Fatiha ke saath koi surah padhein.",
+          "Ruku me jhukein, dono haatho se ghutne pakdein aur 'Subhana Rabbiyal Azeem' (kam se kam 3 baar) kahein.",
+          "Seedhe khade ho kar 'Sami Allahu Liman Hamidah' aur 'Rabbana Lakal Hamd' kahein.",
+          "Sajdah me jayein (paon, ghutne, haath, naak aur peshani zameen par) aur 'Subhana Rabbiyal A'la' 3 baar kahein. Aisa 2 sajde karein.",
+          "Jalsah me baithein aur doosri/akhiri rakat me Tashahhud, Durood-e-Ibrahim aur Dua-e-Masura padh kar dono taraf Salam pher kar namaz poori karein."
+        ],
+        "faqs": [
+          {
+            "q": "Salah me focus badhane ka kya nuskha hai?",
+            "a": "Namaz se pahle behtreen wudu karein aur jo aayat padhein uske maayno par dhyan lagayein."
+          }
+        ]
+      },
+      {
+        "id": "guide-3",
+        "title": "Essentials of Roza (Fasting)",
+        "category": "Fasting",
+        "description": "How to fast in Ramzan-ul-Mubarak with correct Sehri and Iftar ethics.",
+        "steps": [
+          "Subah Sadiq se pahle Sehri karein aur Roza rakhne ki niyat karein.",
+          "Din me jhooth, gheebat (backbiting), ladai-jhagda aur laghu kaamo se mukammal parhez karein.",
+          "Suraj doobte hi fauran bina der kiye khajoor ya paani se Roza khol dalkein (Iftar)."
+        ],
+        "faqs": [
+          {
+            "q": "Bhool kar khane ya peene se kya roza toot jata hai?",
+            "a": "Nahi! Agar bhool kar kha ya pee liya to roza nahi toot-ta, kyunki ye Allah ne khilaya-pilaya hai (Hadees)."
+          }
+        ]
+      }
+    ]
+  },
+  "learnTab": {
+    "courses": [
+      {
+        "id": "course-1",
+        "title": "Islamic Beliefs (Aqeedah 101)",
+        "description": "Simple classes detailing the core 6 pillars of Islamic Faith.",
+        "courseImage": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400",
+        "whatsappEnroll": true,
+        "lessons": [
+          {
+            "id": "les-1",
+            "title": "Allah par Iman - The First Pillar",
+            "content": "Allah ek hai, us ka koi beta ya beti nahi hai. Usne poori kayinat ko banaya hai. Tawheed hi hamare Iman ki buniyad hai.",
+            "quiz": [
+              {
+                "q": "Allah ka sahara kise chahiye?",
+                "options": [
+                  "Allah ko kisi ka sahara nahi, sabko Allah ki zaroorat hai",
+                  "Sarey farishte us ka sahara hain",
+                  "Insaan us ki madad karte hain"
+                ],
+                "answer": "Allah ko kisi ka sahara nahi, sabko Allah ki zaroorat hai"
+              }
+            ]
+          },
+          {
+            "id": "les-2",
+            "title": "Angels (Farishtein) aur unke work",
+            "content": "Farishtein noor se bane hain, be-gunah hain aur humesha Allah ke hukm par kaam karte hain. Hazrat Jibreel (A.S.) sabse bade farishta hain jo Wahi le kar aate the.",
+            "quiz": [
+              {
+                "q": "Hazrat Jibreel (A.S.) ka kya kaam tha?",
+                "options": [
+                  "Baarish barsana",
+                  "Wahi (Prophetic revelations) lana",
+                  "Sajde me rehna humesha"
+                ],
+                "answer": "Wahi (Prophetic revelations) lana"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "course-2",
+        "title": "Akhlaq (Beautiful Islamic Manners)",
+        "description": "Learn how to speak, share love, and treat elders in the Sunnah path.",
+        "courseImage": "https://images.unsplash.com/photo-1590076247564-a29d3daee5f4?auto=format&fit=crop&q=80&w=400",
+        "whatsappEnroll": true,
+        "lessons": [
+          {
+            "id": "les-3",
+            "title": "Maa Baap ke Huqooq (Rights of Parents)",
+            "content": "Maa ke qadmo ke neeche jannat hai aur baap jannat ka darwaza hai. Unse humesha narm aawaz me baat karni chahiye.",
+            "quiz": [
+              {
+                "q": "Agar Maa Baap gussa ho to kya karein?",
+                "options": [
+                  "Unhe narmi se manayein aur unse maafi mangein",
+                  "Unhe ignore karein",
+                  "Gusse me unse behes karein"
+                ],
+                "answer": "Unhe narmi se manayein aur unse maafi mangein"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pdfsTab": {
+    "pdfs": [
+      {
+        "id": "pdf-1",
+        "title": "Sunni Hanafi Namaz Mukammal Tarika",
+        "description": "Namaz-e-Nabi (ﷺ) ke mutabiq wudu, fraiz, sunnatein aur kamil sajdah-ruku ka tareeqa deeni asan zaban me.",
+        "thumbnail": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&q=80&w=400",
+        "pdfUrl": "https://www.islamicacademy.org/images/Books/Namaz/Namaz_Sunni_Hanafi.pdf"
+      },
+      {
+        "id": "pdf-2",
+        "title": "Subah Sham Ki Masnoon Duaein",
+        "description": "Prophet Muhammad (ﷺ) ki batayi hui hifazat, barkat aur sukoon ki rojana ki duaein tarjuma ke sath.",
+        "thumbnail": "https://images.unsplash.com/photo-1590076247564-a29d3daee5f4?auto=format&fit=crop&q=80&w=400",
+        "pdfUrl": "https://www.islamicacademy.org/images/Dua/Daily_Duas_Arabic_Urdu.pdf"
+      }
+    ]
+  },
+  "vaultTab": {
+    "categories": [
+      "Sunnah Habits",
+      "Halal Living",
+      "Islamic History",
+      "Akhlaq-o-Aadaab"
+    ],
+    "articles": [
+      {
+        "id": "art-1",
+        "title": "Paani Peene ki 6 Behtreen Sunnatein",
+        "category": "Sunnah Habits",
+        "content": "1. Baith kar peena\n2. Right hand se glass pakadna\n3. Dekh kar peena\n4. 'Bismillah' padh kar shuru karna\n5. Paani ko 3 saas me maze lekar peena\n6. Peene ke baad 'Alhamdulillah' bolna. Isse dimaag aur jism ko bemisaal shifa milti hai."
+      },
+      {
+        "id": "art-2",
+        "title": "Halal Kamai aur Barkat ki Dua",
+        "category": "Halal Living",
+        "content": "Halal rizk ibadat ke qubool hone ki buniyadi shart hai. Haram kamane wale ki duaayein qubool nahi hoti. Humesha imaandari se naukri ya dukan chalayein aur ye dua padhein: 'Allahumma akfini bihalalika an haramik' (Aye Allah, mujhe halal rizk de kar haram se bacha)."
+      },
+      {
+        "id": "art-3",
+        "title": "Hazrat Bilal (R.A) ki Muazzini aur Mohabbat",
+        "category": "Islamic History",
+        "content": "Hazrat Bilal Habshi (R.A.) Islam ke pahle Muazzin the. Unhone sakht garm makkah ki dhoop me pattharo ke neeche dab kar bhi 'Ahad' (Allah ek hai) pukara. Aap (S.A.W.) unse be-had mohabbat farmate the."
+      }
+    ]
+  }
+}

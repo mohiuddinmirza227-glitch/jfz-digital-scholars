@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Global safety net catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Application configuration document is public read, but restricted writes
+    match /app_state/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // PDF files metadata - public reads, pub writes
+    match /pdf_metadata/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+
+    // PDF chunks storage - public reads, pub writes
+    match /pdf_chunks/{docId} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}

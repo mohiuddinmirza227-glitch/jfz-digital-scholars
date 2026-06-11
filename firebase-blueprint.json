@@ -1,0 +1,52 @@
+{
+  "entities": {
+    "app_state": {
+      "title": "Application State",
+      "description": "Global custom configurations, courses, guides, and important PDFs of the JFZ Scholars application.",
+      "type": "object",
+      "properties": {
+        "appName": { "type": "string", "description": "Display name of the application" },
+        "logoText": { "type": "string", "description": "Abbreviated brand or logo text" },
+        "primaryColor": { "type": "string", "description": "Color theme accent for the UI" },
+        "adminPassword": { "type": "string", "description": "Hashed or plain password to verify administrative access" }
+      }
+    },
+    "pdf_metadata": {
+      "title": "PDF Metadata",
+      "description": "Information about uploaded PDF documents, including total chunks for assembly.",
+      "type": "object",
+      "properties": {
+        "pdfId": { "type": "string" },
+        "fileName": { "type": "string" },
+        "totalChunks": { "type": "number" },
+        "contentType": { "type": "string" },
+        "createdAt": { "type": "number" }
+      }
+    },
+    "pdf_chunks": {
+      "title": "PDF Content Chunks",
+      "description": "Partial base64 content chunks of large PDF documents to bypass Firestore single-document sizes.",
+      "type": "object",
+      "properties": {
+        "pdfId": { "type": "string" },
+        "index": { "type": "number" },
+        "total": { "type": "number" },
+        "data": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "app_state/{docId}": {
+      "schema": "app_state",
+      "description": "Global configuration documents stored securely by administrative users"
+    },
+    "pdf_metadata/{docId}": {
+      "schema": "pdf_metadata",
+      "description": "Meta information for uploaded PDFs"
+    },
+    "pdf_chunks/{docId}": {
+      "schema": "pdf_chunks",
+      "description": "Broken down blocks of uploaded PDFs"
+    }
+  }
+}
